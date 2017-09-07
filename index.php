@@ -7,7 +7,6 @@
 
 	<?php
 
-
 		/* SAUCE https://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php#answer-834355 */
 		function startsWith($haystack, $needle){
 			$length = strlen($needle);
