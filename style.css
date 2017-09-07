@@ -2,7 +2,6 @@
 	/* 3D effect colors, including alpha */
 	--color-blue: rgba(30, 242, 241, .5);
 	--color-red: rgba(246, 5, 10, .5);
-
 	/* Main layout colors */
 	--color-file: #292623;
 	--color-dir: #302B28;
@@ -10,11 +9,9 @@
 	--color-text: white;
 	--color-stext: #555;
 }
-
 /* UGLYYYY */
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
-
 html, body {
 	margin: 0px;
 	height: 100vh;
@@ -27,7 +24,6 @@ html, body {
 	background: linear-gradient(to bottom right, #1B3D29, #133337, #1B3D29);
 	overflow: hidden;
 }
-
 div#catsarecute {
 	width: 900px;
 	height: 350px;
@@ -39,21 +35,17 @@ div#catsarecute {
 	max-height: 100%;
 	overflow: hidden;
 }
-
 div#catsarecute * {
 	display: inline-block;
 	vertical-align: top;
 }
-
 div#path {
 	margin-bottom: 10px;
 	color: #555 !important;
 }
-
 div#path div {
 	display: inline;
 }
-
 div#path div:after {
 	content: " / ";
 }
@@ -63,7 +55,6 @@ div#path div:first-child:before {
 div#path div:last-child:after {
 	content: "";
 }
-
 form#folder {
 	border: 10px solid var(--color-lite);
 	margin: 5px;
@@ -74,13 +65,11 @@ form#folder {
 	height: 350px;
 	overflow: hidden;
 }
-
 form#folder div#sbwrapper {
 	overflow-y: scroll;
 	display: block;
 	width: 820px; /* +20 for the stupid scrollbar */
 }
-
 form#folder div#sbwrapper .file {
 	position: relative;
 	color: var(--color-text);
@@ -98,35 +87,28 @@ form#folder div#sbwrapper .file {
 	transition: .3s text-shadow;
 	text-shadow: 0px 0px 0 var(--color-red), 0px 0px 0 var(--color-blue) !important;
 }
-
 form#folder div#sbwrapper .file:hover {
 	text-shadow: 4px 4px 0 var(--color-red), -4px -4px 0 var(--color-blue) !important;
 }
-
 form#folder div#sbwrapper .filz {
 	background-color: var(--color-file);
 }
-
 form#folder div#sbwrapper .dirz {
 	background-color: var(--color-dir);
 }
-
 form#folder div#sbwrapper .filz span.size {
 	text-align: left;
 	position: absolute;
 	left: 15px !important;
 }
-
 form#folder div#sbwrapper .file span {
 	position: absolute;
 	right: 25px;
 	color: var(--color-stext)
 }
-
 form#navPanel {
 	width: 60px;
 }
-
 form#navPanel * {
 	appearance: button;
 	text-align: center;
@@ -151,7 +133,6 @@ form#navPanel * {
 	transition: .3s text-shadow, .3s background-color;
 	text-shadow: 4px 4px 0 var(--color-red), -4px -4px 0 var(--color-blue) !important;
 }
-
 form#navPanel *:hover {
 	background-color: #2E2925;
 	text-shadow: 0px 0px 0 var(--color-red), 0px 0px 0 var(--color-blue) !important;
