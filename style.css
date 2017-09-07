@@ -1,0 +1,158 @@
+:root {
+	/* 3D effect colors, including alpha */
+	--color-blue: rgba(30, 242, 241, .5);
+	--color-red: rgba(246, 5, 10, .5);
+
+	/* Main layout colors */
+	--color-file: #292623;
+	--color-dir: #302B28;
+	--color-lite: #26221F;
+	--color-text: white;
+	--color-stext: #555;
+}
+
+/* UGLYYYY */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+html, body {
+	margin: 0px;
+	height: 100vh;
+	font-family: sans-serif;
+	color: var(--color-text) !important;
+	background: #283f3b;
+	background: -webkit-linear-gradient(left top, #1B3D29, #133337, #1B3D29);
+	background: -o-linear-gradient(bottom right, #1B3D29, #133337, #1B3D29);
+	background: -moz-linear-gradient(bottom right, #1B3D29, #133337, #1B3D29);
+	background: linear-gradient(to bottom right, #1B3D29, #133337, #1B3D29);
+	overflow: hidden;
+}
+
+div#catsarecute {
+	width: 900px;
+	height: 350px;
+	position: fixed;
+	left:0; right:0;
+	top:0; bottom:0;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+div#catsarecute * {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div#path {
+	margin-bottom: 10px;
+	color: #555 !important;
+}
+
+div#path div {
+	display: inline;
+}
+
+div#path div:after {
+	content: " / ";
+}
+div#path div:first-child:before {
+	content: " » ";
+}
+div#path div:last-child:after {
+	content: "";
+}
+
+form#folder {
+	border: 10px solid var(--color-lite);
+	margin: 5px;
+	margin-left: -5px;
+	background-color: var(--color-lite);
+	border-radius: 5px;
+	width: 800px;
+	height: 350px;
+	overflow: hidden;
+}
+
+form#folder div#sbwrapper {
+	overflow-y: scroll;
+	display: block;
+	width: 820px; /* +20 for the stupid scrollbar */
+}
+
+form#folder div#sbwrapper .file {
+	position: relative;
+	color: var(--color-text);
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	height: 40px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 5px;
+	transition: .3s text-shadow;
+	text-shadow: 0px 0px 0 var(--color-red), 0px 0px 0 var(--color-blue) !important;
+}
+
+form#folder div#sbwrapper .file:hover {
+	text-shadow: 4px 4px 0 var(--color-red), -4px -4px 0 var(--color-blue) !important;
+}
+
+form#folder div#sbwrapper .filz {
+	background-color: var(--color-file);
+}
+
+form#folder div#sbwrapper .dirz {
+	background-color: var(--color-dir);
+}
+
+form#folder div#sbwrapper .filz span.size {
+	text-align: left;
+	position: absolute;
+	left: 15px !important;
+}
+
+form#folder div#sbwrapper .file span {
+	position: absolute;
+	right: 25px;
+	color: var(--color-stext)
+}
+
+form#navPanel {
+	width: 60px;
+}
+
+form#navPanel * {
+	appearance: button;
+	text-align: center;
+	line-height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: white;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	padding: 10px;
+	display: block;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: sans-serif;
+	border: none !important;
+	outline: none !important;
+	background-color: var(--color-lite);
+	transition: .3s text-shadow, .3s background-color;
+	text-shadow: 4px 4px 0 var(--color-red), -4px -4px 0 var(--color-blue) !important;
+}
+
+form#navPanel *:hover {
+	background-color: #2E2925;
+	text-shadow: 0px 0px 0 var(--color-red), 0px 0px 0 var(--color-blue) !important;
+}
