@@ -14,3 +14,6 @@ Just place the files you want inside the `dir` folder and pray to not get pwned 
 
 ## Dependencies
 PHP and a web server.
+
+## Why?
+I have no idea...
