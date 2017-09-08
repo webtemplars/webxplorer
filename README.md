@@ -17,3 +17,5 @@ PHP and a web server.
 
 ## Why?
 I have no idea...
+
+I saw something similar from someone showing his rice and it looked cool, so i'll probably use this to show my rice too.
