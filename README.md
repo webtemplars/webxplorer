@@ -5,7 +5,7 @@ A simple, probably unsecure, but with awesome style, web based file manager.
 
 ![img](https://u.teknik.io/7ySdl.png)
 
-[Live Demo](https://ls.capuno.es/)
+[Live Demo](https://rice.capuno.es/)
 
 </div>
 
