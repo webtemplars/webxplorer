@@ -33,18 +33,19 @@
 			$dir = "dir";
 
 		}
-		while (endsWith($dir, ".")) { /* This is the only """""security""""" I have xddd */
 
-			$nad = explode('/', $dir);
-			if (endsWith($dir, '..')) {
-				array_pop($nad);
+		$nad = explode('/', $dir);
+		foreach ($nad as $key=>$pdir) {
+			if ( endsWith($pdir, '.') ) {
+				unset($nad[$key]);
+				unset($nad[$key-1]);
 			}
-			array_pop($nad);
-			$dir = join('/', $nad);
-
 		}
+		$dir = join('/', $nad);
 
-		if ($dir == '') {
+
+
+		if ($dir == '' OR ! startsWith($dir, "dir/")) {
 			$dir = "dir";
 		}
 
@@ -102,7 +103,7 @@
 				}
 			?>
 
-			<a href="https://github.com/Capuno">
+			<a href="https://capuno.es">
 				X
 			</a>
 
